@@ -41,8 +41,20 @@
         "kind": "xsuaa"
       },
       "auth": {
-        "[development]": {
-          "strategy": "dummy"
+        "kind": "basic-auth",
+        "users": {
+          "admin": {
+            "password": "admin",
+            "roles": [
+              "admin"
+            ],
+            "userAttributes": {
+              "country": [
+                "DE",
+                "FR"
+              ]
+            }
+          }
         }
       }
     },
@@ -58,7 +70,14 @@
     "build": {
       "[node]": {
         "target": "gen",
-        "tasks": [{"for": "node-cf"}, {"for": "hana"}]
+        "tasks": [
+          {
+            "for": "node-cf"
+          },
+          {
+            "for": "hana"
+          }
+        ]
       }
     }
   },

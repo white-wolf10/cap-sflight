@@ -1,31 +1,40 @@
 code;locale;name;descr
+AT;de;Österreich;Österreich
 AU;de;Australien;Commonwealth Australien
 CA;de;Kanada;Canada
+CH;de;Schweiz;Schweiz
 CN;de;China;Volksrepublik China
 FR;de;Frankreich;Republik Frankreich
 DE;de;Deutschland;Bundesrepublik Deutschland
+ES;de;Spanien;Spanien
 IN;de;Indien;Republik Indien
 IL;de;Israel;Staat Israel
 MM;de;Myanmar;Republik der Union Myanmar
 GB;de;Vereinigtes Königreich;Vereinigtes Königreich Großbritannien und Nordirland
 US;de;Vereinigte Staaten;Vereinigte Staaten von Amerika
 EU;de;Europäische Union;Europäische Union
+AT;fr;Austria;Austria
 AU;fr;Australie;Commonwealth d'Australie
 CA;fr;Canada;Canada
+CH;fr;Suisse;Suisse
 CN;fr;Chine;République populaire de Chine (RPC)
 FR;fr;France;République française
 DE;fr;Allemagne;République fédérale d'Allemagne
+ES;fr;Spain;Spain
 IN;fr;Inde;République de l'Inde
 IL;fr;Israël;État d'Israël
 MM;fr;Birmanie;République de l'Union du Myanmar
 GB;fr;Royaume-Uni;Royaume-Uni et Irlande du Nord
 US;fr;États-Unis;États-Unis d'Amérique (États-Unis)
 EU;fr;Union Européenne;Union Européenne
+AT;en;Austria;Austria
 AU;en;Australie;Commonwealth d'Australie
 CA;en;Canada;Canada
+CH;en;Switzerland;Switzerland
 CN;en;China;People's Republic of China (PRC)
 FR;en;France;French Republic
 DE;en;Germany;Federal Republic of Germany
+ES;en;Spain;Spain
 IN;en;India;Republic of India
 IL;en;Israel;State of Israel
 MM;en;Myanmar;Republic of the Union of Myanmar

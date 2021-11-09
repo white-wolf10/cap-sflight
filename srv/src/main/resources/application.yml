@@ -14,6 +14,8 @@ cds:
       password: admin
       roles:
       - admin
+      attributes:
+        country: [DE, FR]
 
     odata-v4:
         endpoint:
@@ -25,3 +27,18 @@ server:
 ---
 spring:
     profiles: cloud
+
+
+---
+spring:
+  profiles: test
+cds:
+  security:
+    mock:
+      users:
+        - name: admin
+          password: admin
+          roles:
+            - admin
+          attributes:
+            country: [DE, FR]
