@@ -49,6 +49,9 @@ annotate TravelService.Travel with @(Common.SideEffects: {
 }
 
 annotate TravelService.Booking with @UI.CreateHidden : to_Travel.TravelStatus.createDeleteHidden;
+annotate TravelService.Booking with @UI.DeleteHidden : to_Travel.TravelStatus.createDeleteHidden;
+annotate TravelService.BookingSupplement with @UI.CreateHidden : to_Travel.TravelStatus.createDeleteHidden;
+annotate TravelService.BookingSupplement with @UI.DeleteHidden : to_Travel.TravelStatus.createDeleteHidden;
 
 annotate TravelService.Booking {
   BookingDate   @Core.Computed;
