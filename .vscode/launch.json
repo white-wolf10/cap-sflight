@@ -6,10 +6,18 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Launch SFlightApplication",
+      "name": "Launch SFlightApplication (H2)",
       "request": "launch",
       "mainClass": "com.sap.cap.sflight.SFlightApplication",
       "projectName": "srv"
+    },
+    {
+      "type": "java",
+      "name": "Launch SFlightApplication (HANA)",
+      "request": "launch",
+      "mainClass": "com.sap.cap.sflight.SFlightApplication",
+      "projectName": "srv",
+      "vmArgs": "-Dspring.profiles.active=cloud"
     },
     {
       "name": "cds watch",
