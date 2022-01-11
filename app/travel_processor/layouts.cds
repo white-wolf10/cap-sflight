@@ -33,9 +33,6 @@ annotate TravelService.Travel with @UI : {
     }]
   },
   SelectionFields : [
-    TravelID,
-    to_Agency_AgencyID,
-    to_Customer_CustomerID,
     TravelStatus_code
   ],
   LineItem : [
@@ -43,6 +40,7 @@ annotate TravelService.Travel with @UI : {
     { $Type  : 'UI.DataFieldForAction', Action : 'TravelService.rejectTravel',   Label  : '{i18n>RejectTravel}'   },
     { $Type  : 'UI.DataFieldForAction', Action : 'TravelService.deductDiscount', Label  : '{i18n>DeductDiscount}' },
     { Value : TravelID               },
+    { $Type : 'UI.DataField', Value : TravelStatus_code, Criticality : TravelStatus.criticality },
     { Value : to_Agency_AgencyID     },
     { Value : to_Customer_CustomerID },
     { Value : BeginDate              },
@@ -50,7 +48,6 @@ annotate TravelService.Travel with @UI : {
     { Value : BookingFee             },
     { Value : TotalPrice             },
     { Value : Description            },
-    { $Type : 'UI.DataField', Value : TravelStatus_code, Criticality : TravelStatus.criticality }
   ],
   Facets : [{
     $Type  : 'UI.CollectionFacet',

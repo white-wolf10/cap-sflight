@@ -8,6 +8,24 @@ annotate my.Travel {
 
   TravelStatus @Common.ValueListWithFixedValues;
 
+  TravelStatus @Common : {  ValueList : {
+      $Type : 'Common.ValueListType',
+      CollectionPath : 'TravelStatus',
+      Label : 'Travel Status',
+      SearchSupported: true,
+      Parameters : [
+          {
+              $Type : 'Common.ValueListParameterInOut',
+              LocalDataProperty : TravelStatus_code,
+              ValueListProperty : 'code',
+          },
+          {
+              $Type : 'Common.ValueListParameterDisplayOnly',
+              ValueListProperty : 'Name',
+          },
+      ],
+  } };
+
   to_Agency @Common.ValueList: {
     CollectionPath : 'TravelAgency',
     Label : '',
